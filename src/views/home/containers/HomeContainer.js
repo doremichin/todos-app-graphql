@@ -3,6 +3,7 @@ import { gql } from "apollo-boost";
 import {Query, useQuery} from "react-apollo";
 import MainList from "../../.shared/List/MainList";
 import TodoItem from "../../.shared/Item/TodoItem";
+import {useEffect} from "react";
 
 
 const GET_TODOS = gql`
@@ -22,6 +23,9 @@ const HomeContainer = () => {
     if(error) return <p>error...</p>
 
     const renderItem = (item) => <TodoItem item={item}/>
+
+    refetch()
+
     return(
         <Container>
             <MainList data={data.todos} renderItem={renderItem}/>
