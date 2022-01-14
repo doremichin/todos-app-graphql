@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {gql} from "apollo-boost";
 import {useParams} from "react-router-dom";
 import {useQuery} from "react-apollo";
+import DetailComponent from "../components/DetailComponent";
 
 
 const GET_TODO = gql`
@@ -24,13 +25,13 @@ const DetailContainer = () => {
 
     return(
         <Container>
-            {data.todo.title}
+            <DetailComponent data={data.todo}/>
         </Container>
     )
 };
 
 const Container = styled.div`
-
+  padding-top: 50px;
 `;
 
 export default DetailContainer;
