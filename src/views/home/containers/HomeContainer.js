@@ -5,7 +5,7 @@ import MainList from "../../.shared/List/MainList";
 import TodoItem from "../../.shared/Item/TodoItem";
 
 
-const GET_CONTINENTS = gql`
+const GET_TODOS = gql`
   query {
     todos {
       id,
@@ -17,7 +17,7 @@ const GET_CONTINENTS = gql`
 
 const HomeContainer = () => {
 
-    const {loading, error, data, refetch } = useQuery(GET_CONTINENTS)
+    const {loading, error, data, refetch } = useQuery(GET_TODOS)
     if(loading) return <p>loading...</p>
     if(error) return <p>error...</p>
 
