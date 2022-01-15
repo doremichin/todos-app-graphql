@@ -1,4 +1,4 @@
-#Todo-app
+# Todo-app
 
 - GraphQL, Apollo
 - React
@@ -7,7 +7,7 @@
 
 CRA 프로젝트 생성 후 todo-app 제작
 
-##GraphQL - Apollo
+## GraphQL - Apollo
 
 - Query
 - Mutation
@@ -18,7 +18,7 @@ GraphQL.js, GraphQL Yoga, AWS Amplify, Relay....
 
 Apollo GraphQl은 프론트,백엔드 모두 제공하고 간편하고 쉽다.
 
-###ApolloServer 만들기
+### ApolloServer 만들기
 ```javascript
 const database = require('./database')
 const { ApolloServer, gql } = require('apollo-server')
@@ -54,7 +54,7 @@ console.log(`🚀  Server ready at ${url}`)
     - 서비스의 액션들을 함수로 지정
     - 요청에 따라 데이터를 반환, 입력, 수정, 삭뼈
 
-###Query 구현
+### Query 구현
 <br>
 Query 루트 타입
 
