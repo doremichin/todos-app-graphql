@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { gql } from "apollo-boost";
-import {Query, useQuery} from "react-apollo";
+import { useQuery} from "react-apollo";
 import MainList from "../../.shared/List/MainList";
 import TodoItem from "../../.shared/Item/TodoItem";
 import {useEffect} from "react";
